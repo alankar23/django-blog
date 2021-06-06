@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+My Blog
+{% endblock title %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock css_files %}
+{% block content %}
+    <header id="main-navigation">
+        <h1> <a href = "">"Alankars Blog"</a> <h1>
+        <nav>
+            <a href = ""> All Posts</a>
+        </nav>
+    </header>
+<section id = "welcome">
+    <header> 
+        <img src = "" alt= "Alankar - The Auther of This Blog" />
+        <h2>Alankars Blog </h2>
+    </header>
+    <p>Hi, I am Alankar and I love to blog about tech and the world!</p>
+</section>
+ <h1> Wellcome to my blog </h1>
+
+<section id="latest-posts">
+    <h2>My Latest Thoughts<h2>
+    <ul>
+        <li>
+        <article class="posts">
+            <a href="">
+                <img src="" alt="Mountain Hiking" />
+                <div class= "post__content">
+                <h3>Mountain Hiking</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus lobortis mattis. Aliquam egestas est eget dolor ornare malesuada. Aliquam eget tempus eros. Vestibulum non dui diam. Donec scelerisque orci sit amet lacus facilisis accumsan finibus a nibh. Aenean rhoncus nisl eget lectus ultrices tempor. Pellentesque scelerisque et turpis nec suscipit. </p>
+                </div>
+        </li>
+    <ul>
+</section>
+<section id="about">
+    <h2>What I do<h2>
+    <p>
+    I love programming, I love to help others and I enjoy exploring new technologies in genral!
+    </p>
+    <p> My Goal is to keep on growing as a developer - and if I could help you to do the same, I'd be very happy!
+    </p>
+ </section>   
+ {% endblock content %}
